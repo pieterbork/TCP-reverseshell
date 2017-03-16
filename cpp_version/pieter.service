@@ -1,0 +1,11 @@
+[Unit]
+Description=Starts remote execution server
+
+[Service]
+Type=oneshot
+ExecStart=revserver &
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target
+
